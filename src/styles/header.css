@@ -1,4 +1,38 @@
 header {
-  border: 1px dashed red;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+header * {
+  margin: 10px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading__logo {
+  font-size: 48px;
+}
+
+.heading__text {
+  font-size: 32px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+
+
+
 
