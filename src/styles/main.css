@@ -1,6 +1,57 @@
-/* font-family: 'Roboto Mono', monospace; */
-
 main {
   width: 100%;
   height: calc(100vh - var(--header-height) - var(--footer-height))
 }
+
+.test {
+  display: flex;
+}
+
+.subject--home {
+  display: inline-block;
+}
+
+.subject--home__text-1 {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 48px;
+}
+
+.subject--home__text-2 {
+  width: 0%;
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 48px;
+  /* animation: blink .75s step-end infinite; */
+  animation-name: typing, blink;
+  animation-duration: 2s, 1.2s;
+  animation-timing-function: steps(13, end), step-end;
+  animation-delay: 3s, 0s;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal, normal;
+  animation-fill-mode: forwards, forwards;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 32px solid var(--dark-gunmetal);
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--dark-gunmetal);
+  }
+}
+
