@@ -78,6 +78,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px dashed red;
 }
 
 .tech-logo__name {
@@ -85,13 +86,13 @@ main {
   grid-column: 1 / 2;
   display: none;
   font-size: 18px;
+  border: 1px dashed red;
 }
 
 .tech-logo:hover .tech-logo__name {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
   animation-name: logo-zoom;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
