@@ -1,4 +1,18 @@
 footer {
   width: 100%;
   height: var(--footer-height);
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logos i {
+  margin: 5px;
+  font-size: 32px;
+}
+
+.footer__copyright {
+  margin: 5px;
 }

@@ -1,6 +1,7 @@
 header {
   width: 100%;
   height: var(--header-height);
+  padding: 0px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,11 +18,11 @@ header * {
 }
 
 .heading__logo {
-  font-size: 48px;
+  font-size: 64px;
 }
 
 .heading__text {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 nav {
@@ -30,9 +31,3 @@ nav {
   align-items: center;
   font-size: 18px;
 }
-
-
-
-
-
-
