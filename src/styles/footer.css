@@ -2,13 +2,14 @@ footer {
   width: 100%;
   height: var(--footer-height);
   padding: 0px 100px;
+  border-top: 1px solid var(--dark-gunmetal);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer__logos i {
+.logo {
   margin: 5px;
   font-size: 32px;
 }

@@ -1,11 +1,11 @@
 main {
   width: 80%;
   height: calc(100vh - var(--header-height) - var(--footer-height));
+  padding: 80px 10px;
   margin: 0px auto;
 }
 
 .home-tagline {
-  padding: 80px 10px;
   display: flex;
 }
 
@@ -16,14 +16,12 @@ main {
 .subject--home__text-1 {
   display: inline-block;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 32px;
 }
 
 .subject--home__text-2 {
   width: 0%;
   display: inline-block;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 32px;
   animation-name: typing, blink;
   animation-duration: 2s, 1.2s;
   animation-timing-function: steps(13, end), step-end;
@@ -36,11 +34,35 @@ main {
   border-right: 20px solid var(--dark-gunmetal);
 }
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-image {
   /* PLACEHOLDER */
   width: 600px;
   height: 400px;
   background-color: red;
+  /* PLACEHOLDER */
+}
+
+.about-me-info {
+  width: 50%;
+  height: 100%;
+  padding-left: 10px;
+  border-left: 2px solid var(--dark-gunmetal);
+  margin: 50px 0px 0px auto;
+  font-size: 24px;
+}
+
+.about-me-portrait {
+  /* PLACEHOLDER */
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* PLACEHOLDER */
 }
 
 @keyframes typing {
