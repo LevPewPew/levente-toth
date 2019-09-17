@@ -1,0 +1,19 @@
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-posts {
+  width: 70%;
+  height: 100%;
+  padding-right: 40px;
+}
+
+.blog-post-list {
+  width: 30%;
+  height: 100%;
+  padding-left: 40px;
+  border-left: 2px solid var(--isabelline);
+}
+
