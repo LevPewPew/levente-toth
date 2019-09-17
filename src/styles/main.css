@@ -9,6 +9,14 @@ main {
   display: flex;
 }
 
+.home-image {
+  /* PLACEHOLDER */
+  width: 600px;
+  height: 400px;
+  background-color: red;
+  /* PLACEHOLDER */
+}
+
 .subject--home {
   display: inline-block;
 }
@@ -31,7 +39,7 @@ main {
   animation-fill-mode: forwards, forwards;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 20px solid var(--dark-gunmetal);
+  border-right: 20px solid var(--isabelline);
 }
 
 .about-me {
@@ -40,24 +48,70 @@ main {
   align-items: center;
 }
 
-.home-image {
-  /* PLACEHOLDER */
-  width: 600px;
-  height: 400px;
-  background-color: red;
-  /* PLACEHOLDER */
-}
-
-.about-me-info {
+.about-me__info {
   width: 50%;
   height: 100%;
-  padding-left: 10px;
-  border-left: 2px solid var(--dark-gunmetal);
+  padding-left: 40px;
+  border-left: 2px solid var(--isabelline);
   margin: 50px 0px 0px auto;
   font-size: 24px;
 }
 
-.about-me-portrait {
+.about-me__info__tech-stack-list {
+  margin: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.tech-logo {
+  grid-rows: 1 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.logo--tech {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-logo__name {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: none;
+  font-size: 18px;
+}
+
+.tech-logo:hover .tech-logo__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  animation-name: logo-zoom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.tech-logo:hover .logo--tech {
+  animation-name: logo-zoom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.about-me__portrait {
   /* PLACEHOLDER */
   width: 200px;
   height: 200px;
@@ -76,11 +130,23 @@ main {
 }
 
 @keyframes blink {
-  from, to {
+
+  from,
+  to {
     border-color: transparent;
   }
 
   50% {
-    border-color: var(--dark-gunmetal);
+    border-color: var(--isabelline);
+  }
+}
+
+@keyframes logo-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
   }
 }

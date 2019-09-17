@@ -2,16 +2,11 @@ footer {
   width: 100%;
   height: var(--footer-height);
   padding: 0px 100px;
-  border-top: 1px solid var(--dark-gunmetal);
+  border-top: 1px solid var(--isabelline);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.logo {
-  margin: 5px;
-  font-size: 32px;
 }
 
 .footer__copyright {
