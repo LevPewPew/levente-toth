@@ -9,20 +9,23 @@ header {
 }
 
 header * {
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .heading {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .heading__logo {
+  margin: 10px;
   font-size: 64px;
 }
 
 .heading__text {
+  margin: 10px;
   font-size: 48px;
 }
 
@@ -31,4 +34,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
+}
+
+nav a {
+  margin: 30px;
 }

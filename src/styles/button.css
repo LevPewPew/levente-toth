@@ -1,0 +1,27 @@
+.resume-dlbutton {
+  border: 3px solid var(--isabelline);
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 5fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-dlbutton__text {
+  padding: 5px;
+  padding-left: 37px;
+  font-weight: bold;
+  background-color: var(--isabelline);
+  color: var(--dark-gunmetal);
+}
+
+.resume-dlbutton__logo {
+  background-color: var(--dark-gunmetal);
+}
+
+.resume-dlbutton__logo i {
+  padding: 5px;
+  color: var(--isabelline);
+}
+

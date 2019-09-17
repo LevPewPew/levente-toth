@@ -4,8 +4,10 @@
 @import "nav.css";
 @import "main.css";
 @import "footer.css";
-@import "cards.css";
 @import "form.css";
+@import "card.css";
+@import "button.css";
+
 
 :root {
   /* 10dc = 10 degrees clockwise (on a color pallete) */
