@@ -35,12 +35,27 @@
     </header>
 
     <main>
-        <form method="POST" action="https://formspree.io/levtoth1988@gmail.com">
-          <input type="text" name="name" placeholder="Name">
-          <input type="email" name="email" placeholder="Email">
-          <textarea name="message" placeholder="Test Message"></textarea>
-          <button class="button-submit" type="submit">Send Test</button>
-        </form>
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contact__form--container">
+          <form class="contact__form" method="POST" action="https://formspree.io/levtoth1988@gmail.com">
+            <label class="input-label" for="contact-name">&nbsp;Name:<br />
+              <input id="contact-name" class="input-field" type="text" name="name" required>
+            </label>
+            <label class="input-label" for="contact-name">&nbsp;Email:<br />
+              <input class="input-field" type="email" name="email" required>
+            </label>
+            <label class="input-label" for="contact-name">&nbsp;Message:<br />
+              <textarea name="message" required></textarea>
+            </label>
+            <button class="button-submit" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="contact__image">
+          <!-- PLACEHOLDER -->
+          <!-- <img src="" alt=""> -->
+        </div>
+      </div>
     </main>
 
     <footer>

@@ -1,11 +1,17 @@
 .resume-dlbutton {
   border: 3px solid var(--isabelline);
+  border-style: outset;
   border-radius: 5px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 5fr 1fr;
   justify-content: center;
   align-items: center;
+}
+
+.resume-dlbutton:active {
+  border-style: inset;
 }
 
 .resume-dlbutton__text {
