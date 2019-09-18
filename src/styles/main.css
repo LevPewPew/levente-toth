@@ -125,8 +125,10 @@ main {
 }
 
 .cards {
-  width: 100%;
+  width: 100%
+  /* width: calc(100% + 220px); */
   height: 100%;
+  /* padding: 0px 110px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
