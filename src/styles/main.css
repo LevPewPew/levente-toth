@@ -74,7 +74,7 @@ main {
 }
 
 .tech-logo {
-  grid-rows: 1 / 3;
+  grid-row: 1 / 3;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
@@ -143,7 +143,7 @@ main {
   /* PLACEHOLDER */
   width: 50%;
   height: 200px;
-  margin-left: 40px;
+  padding-left: 40px;
   background-color: red;
   /* PLACEHOLDER */
 }
