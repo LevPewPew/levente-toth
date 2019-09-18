@@ -23,7 +23,17 @@
   /* translate i chose by getting 50% of the min-width of card-container, since my width transition is 150%, and then i halve it because i want the final card to be over the middle of it's original spot */
   transform: scale(1.1) rotateY(180deg) translateX(110px);
   width: 150%;
-  transition: transform 0.5s, width 2s;
+  transition: transform 0.5s, width 1s linear 0.5s;
+  /* transition-timing-function: linear; */
+}
+
+/* first and last children behave differently so that they don't expand out of their containers and get their ends cut off */
+.card-container:nth-child(1):active .card-content {
+  transform: scale(1.1) rotateY(180deg);
+}
+
+.card-container:nth-last-child(1):active .card-content {
+  transform: scale(1.1) rotateY(180deg) translateX(220px);
 }
 
 .card-container:active {
@@ -47,10 +57,16 @@
 }
 
 .card {
-  position: relative;
   width: 90%;
   height: 90%;
+  padding: 20px;
   border-radius: 20px;
+  position: relative;
+}
+
+.card h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--isabelline);
 }
 
 .card-corner {
@@ -76,8 +92,12 @@
   color: var(--dark-gunmetal);
 }
 
-.card h3, h4, p {
-  margin: 10px;
+.card h3 {
+  margin: 20px;
+}
+
+.card h4, p {
+  margin: 5px 20px;
 }
 
 .project0 {
@@ -96,7 +116,7 @@
 }
 
 .project3 {
-  background-image: linear-gradient(to right bottom, var(--lawn-green-30dc), var(--lawn-green)), url("../assets/high-scores.png");
+  background-image: linear-gradient(to right bottom, var(--independence-30dc), var(--independence)), url("../assets/high-scores.png");
   background-size: cover;
 }
 

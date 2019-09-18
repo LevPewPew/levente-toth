@@ -59,18 +59,19 @@ main {
 
 .about-me__info {
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   padding-left: 40px;
   border-left: 2px solid var(--isabelline);
   font-size: 24px;
 }
 
 .about-me__info__tech-stack-list {
-  margin: 50px;
+  margin: 100px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
+  transform: scale(1.2);
 }
 
 .tech-logo {
@@ -126,11 +127,18 @@ main {
 
 .cards {
   width: 100%;
-  height: 100%;
+  height: 120%;
+  transform: translateY(-100px);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   overflow-x: scroll;
+}
+
+/* weird way to prevent scroll bar from appearing, this is for chrome only, to implement others go here:
+https://forum.webflow.com/t/how-do-i-hide-the-browser-scrollbar-from-appearing-when-a-user-scrolls/59643 */
+.cards::-webkit-scrollbar {
+  display: none;
 }
 
 .heading--portfolio {

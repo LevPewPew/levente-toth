@@ -20,13 +20,13 @@ header * {
 }
 
 .heading__logo {
-  margin: 10px;
+  margin: 20px;
   font-size: 64px;
 }
 
 .heading__text {
   margin: 10px;
-  font-size: 48px;
+  font-size: 64px;
 }
 
 nav {
