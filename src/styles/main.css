@@ -119,6 +119,20 @@ main {
   animation-fill-mode: forwards;
 }
 
+.portfolio {
+  width: 100%;
+  height: 100%;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+}
+
 .heading--portfolio {
   display: flex;
   justify-content: space-between;
