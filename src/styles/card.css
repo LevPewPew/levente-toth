@@ -1,34 +1,33 @@
-
-
-/* .outer-card {
-  min-width: 440px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* zzzzzz */
 .card-container {
-  z-index: 10;
   min-width: 440px;
   height: 500px;
-  /* margin: -150px; */
   float: left;
   perspective: 500px;
 }
 
+/* the transition time is how long it takes to get there from a state "further", or "back" */
 .card-content {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 1s;
+  transition: transform 0.15s;
   transform-style: preserve-3d;
 }
 
 .card-container:hover .card-content {
-  transform: rotateY( 180deg );
-  transition: transform 0.5s;
+  transform: scale(1.1);
+  transition: transform 0.5s, width 0.5s;
+}
+
+.card-container:active .card-content {
+  /* translate i chose by getting 50% of the min-width of card-container, since my width transition is 150%, and then i halve it because i want the final card to be over the middle of it's original spot */
+  transform: scale(1.1) rotateY(180deg) translateX(110px);
+  width: 150%;
+  transition: transform 0.5s, width 2s;
+}
+
+.card-container:active {
+  z-index: 10;
 }
 
 .card-front,
@@ -43,9 +42,8 @@
 }
 
 .card-back {
-  transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }
-/* zzzzz */
 
 .card {
   position: relative;
@@ -55,6 +53,7 @@
 }
 
 .card-corner {
+  /* z-index: 10; */
   width: 50px;
   height: 50px;
   border-radius: 20px 0px 20px 0px;
