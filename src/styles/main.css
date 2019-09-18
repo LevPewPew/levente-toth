@@ -1,5 +1,5 @@
 main {
-  width: 80%;
+  width: 90%;
   height: calc(100vh - var(--header-height) - var(--footer-height));
   padding: 80px 10px;
   margin: 0px auto;
