@@ -7,7 +7,6 @@
 .blog-post-list {
   width: 20%;
   padding: 10px 0px 0px 20px;
-  /* padding-left: 20px; */
   border-left: 2px solid var(--isabelline);
   overflow-y: scroll;
 }
@@ -34,7 +33,7 @@ h6 {
 }
 
 .blog-posts__post img {
-  width: 70%;
+  width: 60%;
   margin: 5px 20px 20px 10px;
   float: left;
 }
