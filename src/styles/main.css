@@ -65,7 +65,7 @@ main {
 }
 
 .about-me__info__tech-stack-list {
-  margin-top: 25px;
+  margin-top: 50px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
