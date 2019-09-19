@@ -1,4 +1,5 @@
 .resume-dlbutton {
+  z-index: 100;
   border: 3px solid var(--isabelline);
   border-style: outset;
   border-radius: 5px;
