@@ -1,16 +1,20 @@
 @media only screen and (max-width: 1200px) {
-  circle, polygon, rect {
+  .shape--home {
     transform: scale(0.8) translateX(-200px);
+  }
+
+  .shape--contact {
+    transform: scale(0.8);
   }
 
   .about-me__info__tech-stack-list {
     display: none;
   }
 
-  /* .blog-container {
-    height: 100vw;
+  /* .contact__image {
+
   } */
-  /* height: calc(100vh - var(--header-height) - var(--footer-height)); */
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -35,6 +39,29 @@
   .about-me__info {
     padding-bottom: 0px;
     font-size: 0.9em;
+  }
+
+  .main--contact {
+    height: 1200px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__form--container {
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+  }
+
+  .contact__image {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .shape--contact {
+    transform: scale(0.8) translateX(500px) translateY(100px);
   }
 
   .blog-post-list {
@@ -229,9 +256,13 @@
 }
 
 @media only screen and (max-width: 500px) {
-  circle, polygon, rect {
+  .shape--home {
     transform: scale(0.5) translateX(-350px);
-  } 
+  }
+
+  .shape--contact {
+    transform: scale(0.4) translateX(400px) translateY(400px);
+  }
 
   .home-tagline h2 {
     font-size: 14px;
