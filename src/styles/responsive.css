@@ -1,4 +1,5 @@
 @media only screen and (max-width: 800px) {
+
   /* burger menu */
   header {
     height: var(--header-height-mobile);
@@ -8,7 +9,7 @@
     margin: 20px;
     font-size: 48px;
   }
-  
+
   .heading__text {
     margin: 10px;
     font-size: 40px;
@@ -18,6 +19,16 @@
     display: none;
   }
 
+  .burger {
+    margin: 15px;
+  }
+
+  .dropbtn {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--isabelline);
+  }
+
   .burger-lines {
     width: 35px;
     height: 4px;
@@ -25,35 +36,38 @@
     margin: 6px 0;
     background-color: var(--dark-gunmetal);
   }
-  
-  .dropbtn {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: var(--isabelline);
-  }
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: lightblue;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: height 1s;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
-  
-  .burger:hover .dropbtn {
-    background-color: blueviolet;
+
+  .burger-btn:hover .dropbtn {
+    background-color: #C5C9D1;
   }
   
-  .burger:hover .dropdown-content {
+  #btnControl {
+    display: none;
+  }
+  
+  #btnControl:checked + label .dropdown-content {
     display: block;
+  }
+  
+  #btnControl:checked + label .dropbtn {
+    background-color: #969FB0;
   }
   
   .burger a:hover {
