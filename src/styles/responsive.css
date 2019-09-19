@@ -50,60 +50,82 @@
     font-size: 0.95em;
   }
 
-  /* zzzz */
-
-  .burger {
-    margin: 15px;
+  .pop-out {
+    display: relative;
+    position: fixed;
+    top: calc(100vh * 0.25);
+    right: 0px;
   }
 
-  .dropbtn {
-    padding: 5px;
-    border-radius: 5px;
+  .dropbtn--pop-out {
+    display: flex;
   }
 
-  .burger-lines {
-    width: 35px;
-    height: 1px;
+  .pop-out-tag {
+    width: 10px;
+    height: calc(100vh * 0.05);
+    border-radius: 5px 0px 0px 5px;
+    margin: 10px 0;
+    display: relative;
+    position: fixed;
+    top: calc(100vh * 0.475);
+    right: 10px;
+    background-color: var(--isabelline);
+  }
+
+  .pop-out-bar {
+    width: 10px;
+    height: calc(100vh * 0.5);
+    border-radius: 5px 0px 0px 5px;
     margin: 10px 0;
     background-color: var(--isabelline);
   }
 
-  .dropdown-content {
+  .dropdown-content--pop-out {
+    width: 200px;
+    border-radius: 5px 0px 0px 5px;
     display: none;
     position: absolute;
-    top: var(--header-height-mobile);
-    right: 0px;
+    top: 30px;
+    right: 10px;
     background-color: var(--isabelline);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     transition: height 1s;
   }
+  
+  .dropdown-content--pop-out a {
+    margin: 5px 10px;
+    display: block;
+    text-decoration: none;
+  }
 
-  .dropdown-content a {
-    padding: 12px 16px;
+  .dropdown-content--pop-out h5, h6 {
     display: block;
     text-decoration: none;
     color: var(--dark-gunmetal);
   }
 
-  .burger-btn:hover .burger-lines {
-    height: 2px;
+  .blog-post-list__item {
+    padding: 0px;
+    border-bottom: 1px solid var(--dark-gunmetal);
   }
 
-  #btnControl {
+  .blog-post-list__item:nth-last-child(1) {
+    padding: 0px;
+    border-bottom: 0px;
+  }
+
+  #pop-outControl {
     display: none;
   }
 
-  #btnControl:checked+label .dropdown-content {
+  #pop-outControl:checked+label .dropdown-content--pop-out {
     display: block;
   }
 
-  #btnControl:checked+label .burger-lines {
-    height: 3px;
-  }
-
-  .burger a:hover {
-    background-color: #C5C9D1;
+  .pop-out a:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -259,6 +281,12 @@
 
 @media only screen and (min-width: 801px) {
   .burger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .pop-out {
     display: none;
   }
 } 
