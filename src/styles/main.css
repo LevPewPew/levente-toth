@@ -47,24 +47,26 @@ main {
 }
 
 .about-me__portrait {
-  /* PLACEHOLDER */
   width: 50%;
-  height: 200px;
   padding-right: 40px;
-  background-color: red;
-  /* PLACEHOLDER */
+}
+
+.about-me__portrait img {
+  width: 100%;
+  clip-path: circle(38%);
+  transform: scale(1.2);
 }
 
 .about-me__info {
   width: 50%;
-  /* height: 100%; */
   padding-left: 40px;
+  padding-bottom: 150px;
   border-left: 2px solid var(--isabelline);
   font-size: 24px;
 }
 
 .about-me__info__tech-stack-list {
-  margin: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
