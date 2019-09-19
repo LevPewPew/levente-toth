@@ -24,7 +24,12 @@
   transform: scale(1.1) rotateY(180deg) translateX(110px);
   width: 150%;
   transition: transform 0.5s, width 1s linear 0.5s;
-  /* transition-timing-function: linear; */
+}
+
+/* needed this a got a weird back when the text isn't long enough on card front */
+.card-container:active .card-front {
+  transform: translateX(50px);
+  transition: transform 0.5s;
 }
 
 /* first and last children behave differently so that they don't expand out of their containers and get their ends cut off */
@@ -101,7 +106,7 @@
 }
 
 .project0 {
-  background-image: linear-gradient(to right bottom, var(--vivid-cerulean-30dc), var(--vivid-cerulean)), url("../assets/world-map.png");
+  background-image: linear-gradient(to right bottom, var(--vivid-cerulean), var(--vivid-cerulean-30dc)), url("../assets/world-map.png");
   background-size: cover;
 }
 
@@ -111,17 +116,21 @@
 }
 
 .project2 {
-  background-image: linear-gradient(to right bottom, var(--electric-pink-30dc), var(--electric-pink)), url("../assets/high-scores.png");
+  background-image: linear-gradient(to right bottom, var(--electric-pink), var(--electric-pink-30dc)), url("../assets/high-scores.png");
   background-size: cover;
 }
 
 .project3 {
-  background-image: linear-gradient(to right bottom, var(--independence-30dc), var(--independence)), url("../assets/high-scores.png");
+  background-image: linear-gradient(to right bottom, var(--independence), var(--independence-30dc)), url("../assets/high-scores.png");
+  background-size: cover;
+}
+
+.project4 {
+  background-image: linear-gradient(to left top, var(--vivid-cerulean), var(--vivid-cerulean-30dc)), url("../assets/world-map.png");
   background-size: cover;
 }
 
 #mube-link {
   text-decoration: underline;
 }
-
 
