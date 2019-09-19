@@ -38,12 +38,12 @@
             <div class="burger-lines"></div>
             <div class="burger-lines"></div>
           </div>
-            <div class="dropdown-content">
-              <a href="./about-me.html">About Me</a>
-              <a href="./portfolio.html">Portfolio</a>
-              <a href="./blog.html">Blog</a>
-              <a href="./contact.html">Contact</a>
-            </div>
+          <div class="dropdown-content">
+            <a href="./about-me.html">About Me</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact</a>
+          </div>
         </label>
       </div>
     </header>
@@ -56,11 +56,11 @@
             <label class="input-label" for="contact-name">&nbsp;Name:<br />
               <input id="contact-name" class="input-field" type="text" name="name" required>
             </label>
-            <label class="input-label" for="contact-name">&nbsp;Email:<br />
-              <input class="input-field" type="email" name="email" required>
+            <label class="input-label" for="contact-email">&nbsp;Email:<br />
+              <input id="contact-email" class="input-field" type="email" name="email" required>
             </label>
-            <label class="input-label" for="contact-name">&nbsp;Message:<br />
-              <textarea name="message" required></textarea>
+            <label class="input-label" for="contact-message">&nbsp;Message:<br />
+              <textarea id="contact-message" name="message" required></textarea>
             </label>
             <button class="button-submit" type="submit">Send</button>
           </form>
@@ -87,7 +87,8 @@
                 <stop offset="100%" style="stop-color:var(--orioles-orange);stop-opacity:1" />
               </linearGradient>
             </defs>
-            <rect class="shape--contact" x="-350" y="200" width="200" height="200" fill="url(#grad2)" transform="rotate(-100, 0, 0)" />
+            <rect class="shape--contact" x="-350" y="200" width="200" height="200" fill="url(#grad2)"
+              transform="rotate(-100, 0, 0)" />
           </svg>
         </div>
       </div>

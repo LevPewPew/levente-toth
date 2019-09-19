@@ -65,7 +65,7 @@ main {
 }
 
 .about-me__info__tech-stack-list {
-  margin-top: 50px;
+  margin-top: 25px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -164,6 +164,10 @@ https://forum.webflow.com/t/how-do-i-hide-the-browser-scrollbar-from-appearing-w
   width: 400px;
   height: 500px;
   padding-left: 40px;
+}
+
+.hyperlink {
+  text-decoration: underline;
 }
 
 @keyframes typing {
