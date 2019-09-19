@@ -11,10 +11,13 @@
     display: none;
   }
 
-  /* .contact__image {
-
-  } */
-
+  .cards {
+    width: 100%;
+    height: 100%;
+    margin: 70px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -23,15 +26,15 @@
     padding: 100px 0px;
     transform: scale(1.4);
   }
-  
-  .about-me > * {
+
+  .about-me>* {
     margin: 30px;
   }
-  
+
   .main--about-me {
     height: unset;
   }
-  
+
   .about-me__portrait {
     padding: 0px;
   }
@@ -39,29 +42,6 @@
   .about-me__info {
     padding-bottom: 0px;
     font-size: 0.9em;
-  }
-
-  .main--contact {
-    height: 1200px;
-  }
-
-  .contact {
-    flex-direction: column;
-  }
-
-  .contact__form--container {
-    padding: 0px;
-    border: 0px;
-    width: 100%;
-  }
-
-  .contact__image {
-    padding: 0px;
-    width: 100%;
-  }
-
-  .shape--contact {
-    transform: scale(0.8) translateX(500px) translateY(100px);
   }
 
   .blog-post-list {
@@ -120,14 +100,15 @@
     z-index: 1;
     transition: height 1s;
   }
-  
+
   .dropdown-content--pop-out a {
     margin: 5px 10px;
     display: block;
     text-decoration: none;
   }
 
-  .dropdown-content--pop-out h5, h6 {
+  .dropdown-content--pop-out h5,
+  h6 {
     display: block;
     text-decoration: none;
     color: var(--dark-gunmetal);
@@ -154,12 +135,38 @@
   .pop-out a:hover {
     transform: scale(1.05);
   }
+
+  .main--contact {
+    height: 1200px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__form--container {
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+  }
+
+  .contact__image {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .shape--contact {
+    transform: scale(0.8) translateX(500px) translateY(100px);
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  circle, polygon, rect {
+
+  circle,
+  polygon,
+  rect {
     transform: scale(0.6) translateX(-300px);
-  }  
+  }
 
   /* resize and re-arrange header, and create burger menu */
   header {
@@ -273,7 +280,7 @@
   }
 
   .footer__logos .logo {
-    font-size:20px; 
+    font-size: 20px;
   }
 
   .about-me {
@@ -281,25 +288,46 @@
     padding: 60px 0px 0px 0px;
     transform: scale(1.8);
   }
-  
+
   .main--about-me {
     padding: 10px;
     padding-top: 20px;
     height: 710px;
   }
-  
+
   .about-me__portrait {
     padding: 0px;
     margin: 10px;
     transform: scale(0.9);
   }
-  
+
   .about-me__info {
     padding-left: 20px;
     margin: 10px;
     font-size: 0.5em;
   }
 
+  /* zzzz */
+  .card-container {
+    min-width: calc(440px * 0.6);
+    height: calc(500px * 0.6);
+  }
+
+  .card-front,
+  .card-back {
+    min-width: calc(440px * 0.6);
+    height: calc(500px * 0.6);
+  }
+
+  .card-container:active .card-content {
+    width: 100%;
+  }
+
+  .card h3, h4, p {
+    font-size: 0.8em;
+  }
+
+  /* zzzz */
   .blog-posts {
     height: 125%;
     transform: translateY(-50px);
@@ -320,4 +348,4 @@
   .pop-out {
     display: none;
   }
-} 
+}
