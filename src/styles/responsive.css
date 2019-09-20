@@ -1,3 +1,4 @@
+/* various changes to sizes, padding, margin and flex direction to acheive responsiveness on small screens */
 @media only screen and (max-width: 1200px) {
   .shape--home {
     transform: scale(0.8) translateX(-200px);

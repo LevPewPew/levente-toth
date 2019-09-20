@@ -1,3 +1,4 @@
+/* header styling */
 header {
   width: 100%;
   height: var(--header-height);
@@ -25,6 +26,7 @@ header {
   font-size: 64px;
 }
 
+/* the navbar */
 nav {
   display: flex;
   justify-content: space-between;

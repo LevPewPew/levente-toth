@@ -1,3 +1,4 @@
+/* setting up the card layout and transitions to create animations to flip the card over and increase its size */
 .card-container {
   min-width: 440px;
   height: 500px;
@@ -104,6 +105,7 @@
   margin: 5px 20px;
 }
 
+/* each card gets it's own linear gradient and colors */
 .project0 {
   background-image: linear-gradient(to right bottom, var(--vivid-cerulean), var(--vivid-cerulean-30dc)), url("../assets/world-map.png");
   background-size: cover;

@@ -1,5 +1,6 @@
 /* using tip 6 of this link http://bdavidxyz.com/blog/how-to-name-css-classes/ for naming conventions (BEM) */
 
+/* imports for other components etc */
 @import "header.css";
 @import "nav.css";
 @import "main.css";
@@ -10,6 +11,7 @@
 @import "button.css";
 @import "responsive.css";
 
+/* variables to make colors easier to use aswell as to make body size calculations easier and more managable */
 :root {
   /* 30dc = 30 degrees clockwise (on a color pallete) */
   --isabelline: #EAEBED;
@@ -28,6 +30,7 @@
   --footer-height-mobile: 50px;
 }
 
+/* default stylings for all elements */
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -47,6 +50,7 @@ h2 {
   margin-bottom: 50px;
 }
 
+/* logo display */
 .logo {
   margin: 5px;
   font-size: 32px;
@@ -59,11 +63,4 @@ h2 {
 .media-container {
   max-width: 1200px;
   margin: 0px auto;
-}
-
-.placeholder {
-  width: 100%;
-  height: 100%;
-  border: 1px dashed red;
-  color: red;
 }

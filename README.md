@@ -107,4 +107,5 @@ Recruiters, Management or HR of a company, freelance Clients, other Developers.
 
 - HTML
 - CSS
+- GitHub
 - [Netlify](https://app.netlify.com/teams/levpewpew/sites)

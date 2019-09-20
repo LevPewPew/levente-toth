@@ -1,3 +1,4 @@
+/* appearance of a download button for resume PDF */
 .resume-dlbutton {
   z-index: 100;
   border: 3px solid var(--isabelline);
@@ -11,6 +12,7 @@
   align-items: center;
 }
 
+/* some effects for clicking the button */
 .resume-dlbutton:active {
   border-style: inset;
 }

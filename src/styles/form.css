@@ -2,6 +2,7 @@ form {
   color: var(--dark-gunmetal);
 }
 
+/* the container for form inputs and buttons */
 .contact__form {
   display: flex;
   flex-direction: column;
@@ -39,6 +40,7 @@ textarea {
   color: var(--dark-gunmetal);
 }
 
+/* submit button to make a POST request to formspree to manage contact functionality */
 .button-submit {
   width: 100%;
   height: 48px;
