@@ -11,7 +11,7 @@
 @import "responsive.css";
 
 :root {
-  /* 10dc = 10 degrees clockwise (on a color pallete) */
+  /* 30dc = 30 degrees clockwise (on a color pallete) */
   --isabelline: #EAEBED;
   --dark-gunmetal: #191D32;
   --orioles-orange: #FB5012;
