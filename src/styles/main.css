@@ -47,6 +47,10 @@ main {
   align-items: center;
 }
 
+.about-me-heading {
+  margin-bottom: 60px;
+}
+
 .about-me__portrait {
   width: 50%;
   padding-right: 40px;
