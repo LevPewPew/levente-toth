@@ -52,13 +52,13 @@ main {
 }
 
 .about-me__portrait {
-  width: 50%;
-  padding-right: 40px;
+  width: 35%;
+  padding-right: 90px;
 }
 
 .about-me__portrait img {
   width: 100%;
-  clip-path: circle(38%);
+  clip-path: circle(60%);
   transform: scale(1.2);
 }
 
