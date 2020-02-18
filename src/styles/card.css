@@ -131,3 +131,7 @@
   background-size: cover;
 }
 
+.project5 {
+  background-image: linear-gradient(to left top, var(--orioles-orange), var(--orioles-orange-30dc)), url("../assets/combat.png");
+  background-size: cover;
+}
