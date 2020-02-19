@@ -24,7 +24,6 @@
   /* translate i chose by getting 50% of the min-width of card-container, since my width transition is 150%, and then i halve it because i want the final card to be over the middle of it's original spot */
   transform: scale(1.1) rotateY(180deg) translateX(110px);
   width: 150%;
-  transition: transform 0.5s, width 1s linear 0.5s;
 }
 
 /* needed this a got a weird back when the text isn't long enough on card front */
@@ -107,31 +106,31 @@
 
 /* each card gets it's own linear gradient and colors */
 .project0 {
-  background-image: linear-gradient(to right bottom, var(--vivid-cerulean), var(--vivid-cerulean-30dc)), url("../assets/world-map.png");
+  background-image: linear-gradient(to right bottom, var(--vivid-cerulean), var(--vivid-cerulean-30dc));
   background-size: cover;
 }
 
 .project1 {
-  background-image: linear-gradient(to right bottom, var(--orioles-orange), var(--orioles-orange-30dc)), url("../assets/combat.png");
+  background-image: linear-gradient(to right bottom, var(--orioles-orange), var(--orioles-orange-30dc));
   background-size: cover;
 }
 
 .project2 {
-  background-image: linear-gradient(to right bottom, var(--electric-pink), var(--electric-pink-30dc)), url("../assets/high-scores.png");
+  background-image: linear-gradient(to right bottom, var(--electric-pink), var(--electric-pink-30dc));
   background-size: cover;
 }
 
 .project3 {
-  background-image: linear-gradient(to right bottom, var(--independence), var(--independence-30dc)), url("../assets/high-scores.png");
+  background-image: linear-gradient(to right bottom, var(--independence), var(--independence-30dc));
   background-size: cover;
 }
 
 .project4 {
-  background-image: linear-gradient(to left top, var(--vivid-cerulean), var(--vivid-cerulean-30dc)), url("../assets/world-map.png");
+  background-image: linear-gradient(to left top, var(--vivid-cerulean), var(--vivid-cerulean-30dc));
   background-size: cover;
 }
 
 .project5 {
-  background-image: linear-gradient(to left top, var(--orioles-orange), var(--orioles-orange-30dc)), url("../assets/combat.png");
+  background-image: linear-gradient(to left top, var(--orioles-orange), var(--orioles-orange-30dc));
   background-size: cover;
 }
