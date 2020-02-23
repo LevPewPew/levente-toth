@@ -211,7 +211,7 @@
     right: 0px;
     background-color: var(--isabelline);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 30;
     transition: height 1s;
   }
 
@@ -259,7 +259,7 @@
   footer {
     height: var(--footer-height-mobile);
     padding: 0px;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -318,10 +318,37 @@
   .card-back {
     min-width: calc(440px * 0.6);
     height: calc(500px * 0.6);
+    font-size: 12px;
   }
 
+  .card-content {
+    transition: none;
+    transform-style: none;
+  }
+
+  .card-container:hover .card-content {
+    transform: none;
+    transition: none;
+  }
+  
   .card-container:active .card-content {
+    /* translate i chose by getting 50% of the min-width of card-container, since my width transition is 150%, and then i halve it because i want the final card to be over the middle of it's original spot */
+    transform: none;
     width: 100%;
+  }
+
+  .card-container:active .card-front {
+    transform: none;
+    transition: none;
+  }
+  
+  /* first and last children behave differently so that they don't expand out of their containers and get their ends cut off */
+  .card-container:nth-child(1):active .card-content {
+    transform: none;
+  }
+  
+  .card-container:nth-last-child(1):active .card-content {
+    transform: none;
   }
 
   .card h3, h4, p {

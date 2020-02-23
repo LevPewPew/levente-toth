@@ -1,6 +1,6 @@
 /* appearance of a download button for resume PDF */
 .resume-dlbutton {
-  z-index: 100;
+  z-index: 20;
   border: 3px solid var(--isabelline);
   border-style: outset;
   border-radius: 5px;
